@@ -83,7 +83,7 @@ body::-webkit-scrollbar {
 
 #headTextBackground {
   position: absolute;
-  font-size: 140px;
+  font-size: 9vw;
   white-space: nowrap;
   left: 50%;
   top: 20vh;
