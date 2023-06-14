@@ -8,11 +8,11 @@ about.classList.add("aboutStart");
 pricing.classList.add("pricingStart");
 contact.classList.add("contactStart");
 
-let path = document.querySelector("path");
-let pathLength = path.getTotalLength();
+//let path = document.querySelector("path");
+//let pathLength = path.getTotalLength();
 
-path.style.strokeDasharray = pathLength + " " + pathLength;
-path.style.strokeDashoffset = pathLength;
+//path.style.strokeDasharray = pathLength + " " + pathLength;
+//path.style.strokeDashoffset = pathLength;
 
 addEventListener("scroll", (e) => {
   var scrollPercentage = Math.max(
@@ -23,23 +23,11 @@ addEventListener("scroll", (e) => {
         65)
   );
 
-  var drawLength = pathLength * (scrollPercentage * 5);
-  console.log(pathLength);
-  console.log(scrollPercentage);
+  //var drawLength = pathLength * (scrollPercentage * 5);
+  //console.log(pathLength);
+  //console.log(scrollPercentage);
 
   if (window.scrollY > 0) {
-    about.classList.remove("aboutEnd");
-    pricing.classList.remove("pricingEnd");
-    contact.classList.remove("contactEnd");
-    about.classList.add("aboutStart");
-    pricing.classList.add("pricingStart");
-    contact.classList.add("contactStart");
-
-    if (window.scrollY > 0) {
-      navBar.classList.remove("navBarStart");
-      navBar.classList.add("navBarEnd");
-    }
-  } else {
     about.classList.remove("aboutStart");
     pricing.classList.remove("pricingStart");
     contact.classList.remove("contactStart");
@@ -47,7 +35,15 @@ addEventListener("scroll", (e) => {
     pricing.classList.add("pricingEnd");
     contact.classList.add("contactEnd");
 
-    navBar.classList.remove("navBarEnd");
-    navBar.classList.add("navBarStart");
+    if (window.scrollY > 0) {
+    }
+  } else {
+    about.classList.remove("aboutEnd");
+    pricing.classList.remove("pricingEnd");
+    contact.classList.remove("contactEnd");
+    about.classList.add("aboutStart");
+    pricing.classList.add("pricingStart");
+    contact.classList.add("contactStart");
+
   }
 });
