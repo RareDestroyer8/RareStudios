@@ -11,19 +11,21 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
+/* Change here */
+
 particlesJS('particles-js',
   
   {
     "particles": {
       "number": {
-        "value": 250,
+        "value": 150,
         "density": {
           "enable": true,
-          "value_area": 750
+          "value_area": 200
         }
       },
       "color": {
-        "value": "#F5F5DC"
+        "value": "#ff3300"
       },
       "shape": {
         "type": "circle",
@@ -41,7 +43,7 @@ particlesJS('particles-js',
         }
       },
       "opacity": {
-        "value": 0.5,
+        "value": 1,
         "random": false,
         "anim": {
           "enable": false,
@@ -51,7 +53,7 @@ particlesJS('particles-js',
         }
       },
       "size": {
-        "value": 2.35,
+        "value": 6.35,
         "random": true,
         "anim": {
           "enable": false,
@@ -62,14 +64,14 @@ particlesJS('particles-js',
       },
       "line_linked": {
         "enable": true,
-        "distance": 100,
-        "color": "#F5F5DC",
-        "opacity": 0.4,
-        "width": 1
+        "distance": 150,
+        "color": "#ff5c33",
+        "opacity": 0.6,
+        "width": .5
       },
       "move": {
         "enable": true,
-        "speed": 3,
+        "speed": 1.5,
         "direction": "none",
         "random": false,
         "straight": false,
@@ -82,7 +84,7 @@ particlesJS('particles-js',
       }
     },
     "interactivity": {
-      "detect_on": "screen",
+      "detect_on": "canvas",
       "events": {
         "onhover": {
           "enable": true,
